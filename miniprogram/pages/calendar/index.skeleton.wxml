@@ -1,0 +1,452 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/2/24 下午2:20:07 
+使用方法：
+在 C:\myself\work\rili\miniprogram\pages\calendar\index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 C:\myself\work\rili\miniprogram\pages\calendar\index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view>
+      <view class="neo-top">
+        <view class="solar-calendar-title sk-transparent sk-text-14-2857-785 sk-text">2021年3月1日 星期一</view>
+        <view class="lunar-calendar-title sk-transparent sk-text-14-2857-941 sk-text">辛丑牛年 正月十八日</view>
+      </view>
+      <view is="component/v2/index" id="calendar">
+        <view class="flex v2-index--flex b v2-index--b tb v2-index--tb ac v2-index--ac">
+          <view class="calendar v2-index--calendar b v2-index--b tb v2-index--tb">
+            <view class="handle v2-index--handle default_handle-color v2-index--default_handle-color fs28 v2-index--fs28 b v2-index--b lr v2-index--lr ac v2-index--ac pc v2-index--pc">
+              <view class="prev v2-index--prev fs36 v2-index--fs36">
+                <text class="prev-handle v2-index--prev-handle iconfont v2-index--iconfont icon-doubleleft v2-index--icon-doubleleft sk-pseudo sk-pseudo-circle" data-type="prev_year"></text>
+                <text class="prev-handle v2-index--prev-handle iconfont v2-index--iconfont icon-left v2-index--icon-left sk-pseudo sk-pseudo-circle" data-type="prev_month"></text>
+              </view>
+              <view class="flex v2-index--flex date-in-handle v2-index--date-in-handle b v2-index--b lr v2-index--lr cc v2-index--cc sk-transparent sk-text-14-2857-242 sk-text">2021 年 3 月</view>
+              <view class="next v2-index--next fs36 v2-index--fs36">
+                <text class="next-handle v2-index--next-handle iconfont v2-index--iconfont icon-right v2-index--icon-right sk-pseudo sk-pseudo-circle" data-type="next_month"></text>
+                <text class="next-handle v2-index--next-handle iconfont v2-index--iconfont icon-doubleright v2-index--icon-doubleright sk-pseudo sk-pseudo-circle" data-type="next_year"></text>
+              </view>
+            </view>
+            <view class="weeks v2-index--weeks b v2-index--b lr v2-index--lr ac v2-index--ac default_week-color v2-index--default_week-color">
+              <view class="week v2-index--week fs28 v2-index--fs28 sk-transparent sk-text-22-0000-744 sk-text" data-idx="0" style="background-position-x: 50%;">一</view>
+              <view class="week v2-index--week fs28 v2-index--fs28 sk-transparent sk-text-22-0000-249 sk-text" data-idx="1" style="background-position-x: 50%;">二</view>
+              <view class="week v2-index--week fs28 v2-index--fs28 sk-transparent sk-text-22-0000-768 sk-text" data-idx="2" style="background-position-x: 50%;">三</view>
+              <view class="week v2-index--week fs28 v2-index--fs28 sk-transparent sk-text-22-0000-637 sk-text" data-idx="3" style="background-position-x: 50%;">四</view>
+              <view class="week v2-index--week fs28 v2-index--fs28 sk-transparent sk-text-22-0000-500 sk-text" data-idx="4" style="background-position-x: 50%;">五</view>
+              <view class="week v2-index--week fs28 v2-index--fs28 sk-transparent sk-text-22-0000-801 sk-text" data-idx="5" style="background-position-x: 50%;">六</view>
+              <view class="week v2-index--week fs28 v2-index--fs28 sk-transparent sk-text-22-0000-374 sk-text" data-idx="6" style="background-position-x: 50%;">日</view>
+            </view>
+            <view class="b v2-index--b lr v2-index--lr wrap v2-index--wrap">
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="0" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc default_choosed v2-index--default_choosed sk-transparent">
+                    1
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom date-desc-bottom-always v2-index--date-desc-bottom-always">
+                      <text class="sk-transparent sk-text-18-7500-847 sk-text" style="background-position-x: 50%;">十八</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="1" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    2
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-278 sk-text" style="background-position-x: 50%;">十九</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="2" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    3
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-661 sk-text" style="background-position-x: 50%;">二十</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="3" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    4
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-838 sk-text" style="background-position-x: 50%;">廿一</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="4" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    5
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-493 sk-text" style="background-position-x: 50%;">惊蛰</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="5" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc default_weekend-color v2-index--default_weekend-color">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    6
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-417 sk-text" style="background-position-x: 50%;">廿三</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="6" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc default_weekend-color v2-index--default_weekend-color">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    7
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-760 sk-text" style="background-position-x: 50%;">廿四</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="7" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    8
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-253 sk-text" style="background-position-x: 50%;">廿五</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="8" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    9
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-640 sk-text" style="background-position-x: 50%;">廿六</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="9" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    10
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-267 sk-text" style="background-position-x: 50%;">廿七</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="10" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    11
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-595 sk-text" style="background-position-x: 50%;">廿八</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="11" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    12
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="default_date-desc-lunar v2-index--default_date-desc-lunar default_festival v2-index--default_festival sk-transparent sk-text-18-7500-957 sk-text" style="background-position-x: 50%;">植树节</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="12" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc default_weekend-color v2-index--default_weekend-color">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    13
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-923 sk-text" style="background-position-x: 50%;">初一</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="13" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc default_weekend-color v2-index--default_weekend-color">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    14
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-607 sk-text" style="background-position-x: 50%;">初二</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="14" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    15
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-648 sk-text" style="background-position-x: 50%;">初三</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="15" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    16
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-443 sk-text" style="background-position-x: 50%;">初四</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="16" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    17
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-938 sk-text" style="background-position-x: 50%;">初五</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="17" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    18
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-623 sk-text" style="background-position-x: 50%;">初六</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="18" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    19
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-883 sk-text" style="background-position-x: 50%;">初七</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="19" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc default_weekend-color v2-index--default_weekend-color">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    20
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-290 sk-text" style="background-position-x: 50%;">春分</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="20" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc default_weekend-color v2-index--default_weekend-color">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    21
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-278 sk-text" style="background-position-x: 50%;">初九</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="21" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    22
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-917 sk-text" style="background-position-x: 50%;">初十</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="22" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    23
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-878 sk-text" style="background-position-x: 50%;">十一</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="23" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    24
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-227 sk-text" style="background-position-x: 50%;">十二</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="24" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    25
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-481 sk-text" style="background-position-x: 50%;">十三</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="25" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    26
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-522 sk-text" style="background-position-x: 50%;">十四</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="26" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc default_weekend-color v2-index--default_weekend-color">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    27
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-286 sk-text" style="background-position-x: 50%;">十五</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="27" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc default_weekend-color v2-index--default_weekend-color">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    28
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-225 sk-text" style="background-position-x: 50%;">十六</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="28" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    29
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-926 sk-text" style="background-position-x: 50%;">十七</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="29" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    30
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-686 sk-text" style="background-position-x: 50%;">十八</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid default_normal-date v2-index--default_normal-date b v2-index--b ac v2-index--ac pc v2-index--pc" data-idx="30" data-info="[object Object]" style="position:relative;">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date b v2-index--b ac v2-index--ac pc v2-index--pc sk-transparent">
+                    31
+                    <view class="date-desc v2-index--date-desc default_date-desc v2-index--default_date-desc date-desc-bottom v2-index--date-desc-bottom">
+                      <text class="sk-transparent sk-text-18-7500-794 sk-text" style="background-position-x: 50%;">十九</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="0">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-637 sk-text" style="background-position-x: 50%;">
+                    1
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="1">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-43 sk-text" style="background-position-x: 50%;">
+                    2
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="2">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-48 sk-text" style="background-position-x: 50%;">
+                    3
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="3">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-475 sk-text" style="background-position-x: 50%;">
+                    4
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="4">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-413 sk-text" style="background-position-x: 50%;">
+                    5
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="5">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-526 sk-text" style="background-position-x: 50%;">
+                    6
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="6">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-435 sk-text" style="background-position-x: 50%;">
+                    7
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="7">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-444 sk-text" style="background-position-x: 50%;">
+                    8
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="8">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-299 sk-text" style="background-position-x: 50%;">
+                    9
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="9">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-870 sk-text" style="background-position-x: 50%;">
+                    10
+                  </view>
+                </view>
+              </view>
+              <view class="grid v2-index--grid b v2-index--b ac v2-index--ac pc v2-index--pc default_next-month-date v2-index--default_next-month-date" data-idx="10">
+                <view class="date-wrap v2-index--date-wrap b v2-index--b cc v2-index--cc">
+                  <view class="date v2-index--date sk-transparent sk-text-20-3704-795 sk-text" style="background-position-x: 50%;">
+                    11
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="neo-bottom">
+        <view class="neo-good">
+          <text class="neo-gap sk-transparent sk-text-14-2857-53 sk-text" style="border: none;">宜</text>
+          <text class="neo-good-content sk-transparent sk-text-14-2857-20 sk-text">祭祀|沐浴|开光|塑绘|祈福|求嗣|订盟|纳采|冠笄|裁衣|嫁娶|动土|除服|成服|移柩|破土|启钻|出行|安碓|放水|开市|立券|交易</text>
+        </view>
+        <view class="neo-bad">
+          <text class="neo-gap sk-transparent sk-text-14-2857-379 sk-text" style="border: none;">忌</text>
+          <text class="neo-bad-content sk-transparent sk-text-14-2857-146 sk-text">安葬|上梁|入宅|作灶</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

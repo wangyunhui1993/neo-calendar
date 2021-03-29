@@ -1,0 +1,88 @@
+@import '../calendarComponent/index.wxss';
+
+.neo-top{
+  padding: 20rpx;
+}
+.solar-calendar-title {
+  font-size: 38rpx;
+  color: #1f1f1f;
+}
+.lunar-calendar-title{
+  font-size: 28rpx;
+  margin-top: 24rpx;
+  color: #858585;
+}
+.neo-hb{
+  width:95%;
+  margin: 10rpx auto;
+  background: #f5f5f5;
+  border-radius: 20rpx;
+  padding: 10rpx 0;
+}
+.neo-bottom{
+  width:95%;
+  margin: 10rpx auto;
+  background: #f5f5f5;
+  font-size: 24rpx;
+  border-radius: 20rpx;
+}
+.neo-gap{
+  width: 24rpx;
+  border-width: 1px;
+  
+  border-style:solid;
+  align-items: center;
+  border-radius: 10rpx;
+  padding: 0 5rpx; 
+  margin-right: 10rpx;
+}
+.neo-good, .neo-bad{
+  display: flex;
+  padding: 10rpx;
+}
+.neo-good .neo-gap{
+  border-color: #fb6c6c;
+  color: #fb6c6c;
+}
+.neo-bad .neo-gap{
+  border-color: #bebebe;
+  color: #bebebe;
+}
+.neo-good-content, .neo-bad-content{
+  flex: 1;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+
+.neo-loading{
+  height: 124rpx;
+}
+
+.neo-joke{
+  width:95%;
+  margin: 10rpx auto;
+  background: #f5f5f5;
+  font-size: 24rpx;
+  border-radius: 20rpx;
+  padding: 10rpx;
+}
+.neo-joke-title{
+  font-size: 32rpx;
+  color: green;
+}
+.joke-scroll{
+  max-height: 200rpx;
+  min-height: 100rpx;
+}
+.neo-joke-btn{
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction:row-reverse;
+}
+.neo-joke-next-btn{
+  color: blue;
+  float: right;
+}

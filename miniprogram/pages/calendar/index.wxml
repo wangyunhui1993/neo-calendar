@@ -1,0 +1,35 @@
+<view>
+  <view class="neo-top">
+    <view class="neo-date">
+      <view class="solar-calendar-title">{{solarTitle}}</view>
+      <view class="lunar-calendar-title">{{lunarTitle}}</view>
+    </view>
+  </view>
+  <calendar id="calendar" config="{{calendarConfig}}" bind:onSwipe="onSwipe" bind:takeoverTap="takeoverTap"
+    bind:afterTapDate="afterTapDate" bind:whenChangeMonth="whenChangeMonth"
+    bind:afterCalendarRender="afterCalendarRender"></calendar>
+    <view wx:if="{{showHb}}" class="neo-hb"  bindtap="openEleBtn">
+    <image mode="aspectFit" style="height:200rpx;width:100%;" src="cloud://neo-calendar-9g7fk28rfe02adce.6e65-neo-calendar-9g7fk28rfe02adce-1305051654/config/ele_hb_2.jpg"></image>
+  </view>
+  <view class="neo-bottom">
+    <view wx:if="{{showToDo}}" >
+      <view class="neo-good"><text class="neo-gap">宜</text><text class="neo-good-content">{{goodContent}}</text></view>
+      <view class="neo-bad"><text class="neo-gap">忌</text><text class="neo-bad-content">{{badContent}}</text></view>
+    </view>
+    <mp-loading wx:else type="dot-gray" ext-class="neo-loading"></mp-loading>
+  </view>
+  <view class="neo-joke">
+    <view class="neo-joke-title"><text>每日一笑</text></view>
+    <view class="neo-joke-content">
+      <scroll-view wx:if="{{showJoke}}" scroll-y="true" class="joke-scroll">
+        <view style="white-space:pre-wrap">
+          {{jokeConent}}
+        </view>
+      </scroll-view>
+      <mp-loading wx:else type="dot-gray" ext-class="joke-scroll"></mp-loading>
+    </view>
+    <view class="neo-joke-btn">
+      <view class="neo-joke-next-btn" bindtap="nextBtn">下一个</view>
+    </view>
+  </view>
+</view>

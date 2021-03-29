@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "简约日历",
+  "usingComponents": {
+    "calendar": "../../component/v2/index",
+    "mp-loading": "weui-miniprogram/loading/loading"
+  }
+}
